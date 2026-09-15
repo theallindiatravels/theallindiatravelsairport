@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 import { waLink, site } from '@/data/site';
+import GooglePlaceInput from '@/components/GooglePlaceInput';
 
 export default function BookingForm() {
   const [form, setForm] = useState({
@@ -41,18 +42,16 @@ export default function BookingForm() {
             className="input-field text-sm"
           />
         </div>
-        <input
-          type="text"
+        <GooglePlaceInput
           placeholder="Pickup Location"
           value={form.pickup}
-          onChange={(e) => setForm({ ...form, pickup: e.target.value })}
+          onChange={(pickup) => setForm({ ...form, pickup })}
           className="input-field text-sm"
         />
-        <input
-          type="text"
+        <GooglePlaceInput
           placeholder="Drop Destination"
           value={form.drop}
-          onChange={(e) => setForm({ ...form, drop: e.target.value })}
+          onChange={(drop) => setForm({ ...form, drop })}
           className="input-field text-sm"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
