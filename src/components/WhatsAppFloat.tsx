@@ -16,10 +16,9 @@ export default function WhatsAppFloat() {
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-success-500 shadow-lg shadow-success-500/40 transition-all duration-300 hover:scale-110 hover:bg-success-600 animate-float"
-        aria-label="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp 24/7"
       >
         <MessageCircle className="h-7 w-7 text-white" />
-        <span className="absolute -right-1 -top-1 h-4 w-4 animate-pulse rounded-full border-2 border-white bg-error-500" />
       </a>
     </>
   );
