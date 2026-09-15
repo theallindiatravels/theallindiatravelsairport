@@ -38,7 +38,7 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
           </div>
         </button>
 
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden 2xl:flex items-center gap-1">
           {navLinks.map((link) => (
             <button
               key={link.path}
@@ -58,7 +58,7 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden 2xl:flex items-center gap-3">
           <a
             href={`tel:${site.phoneRaw}`}
             className={`flex items-center gap-2 text-sm font-semibold ${scrolled ? 'text-gray-700 hover:text-primary-700' : 'text-white hover:text-white/80'}`}
@@ -78,16 +78,18 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
 
         <button
           onClick={() => setOpen(!open)}
-          className={`lg:hidden p-2 rounded-lg ${scrolled ? 'text-gray-900' : 'text-white'}`}
+          className={`2xl:hidden p-2 rounded-lg ${scrolled ? 'text-gray-900' : 'text-white'}`}
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </nav>
 
       {open && (
-        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
-          <div className="container-page py-4 flex flex-col gap-1">
+        <div id="mobile-navigation" className="2xl:hidden bg-white border-t border-gray-100 shadow-lg">
+          <div className="container-page max-h-[calc(100vh-4rem)] overflow-y-auto py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <button
                 key={link.path}
