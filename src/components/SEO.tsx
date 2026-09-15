@@ -11,7 +11,7 @@ export interface SEOData {
   structuredData?: object;
 }
 
-const BASE_URL = 'https://theallindiatravelsairport.com';
+const BASE_URL = 'https://www.theallindiatravels.online';
 
 function setMeta(attr: 'name' | 'property', key: string, content: string) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
