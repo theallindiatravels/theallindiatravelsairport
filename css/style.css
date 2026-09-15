@@ -294,6 +294,8 @@ h1,h2,h3,h4,h5{font-family:'Playfair Display',Georgia,serif;color:var(--navy);li
 .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 6px 24px rgba(37,211,102,.4);transition:.3s;animation:waPulse 2s infinite}
 .wa-float:hover{transform:scale(1.1)}
 @keyframes waPulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.4)}50%{box-shadow:0 6px 40px rgba(37,211,102,.6)}}
+.call-float{position:fixed;bottom:28px;right:96px;z-index:999;width:58px;height:58px;border-radius:50%;background:var(--navy);display:grid;place-items:center;color:#fff;font-size:1.6rem;box-shadow:0 6px 24px rgba(2,48,71,.35);transition:.3s}
+.call-float:hover{transform:scale(1.1);background:var(--navy-light)}
 .back-to-top{position:fixed;bottom:96px;right:32px;z-index:998;width:42px;height:42px;border-radius:50%;background:var(--white);border:1px solid var(--light-gray);box-shadow:var(--shadow-sm);display:grid;place-items:center;color:var(--navy);opacity:0;visibility:hidden;transition:.3s}
 .back-to-top.visible{opacity:1;visibility:visible}
 .back-to-top:hover{background:var(--yellow);border-color:var(--yellow)}

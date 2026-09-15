@@ -67,6 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const floatingWhatsApp = document.querySelector('.wa-float');
+  if (floatingWhatsApp && !document.querySelector('.call-float')) {
+    const callFloat = document.createElement('a');
+    callFloat.href = 'tel:+919363539853';
+    callFloat.className = 'call-float';
+    callFloat.setAttribute('aria-label', 'Call The All India Travels');
+    callFloat.textContent = '📞';
+    floatingWhatsApp.parentElement.insertBefore(callFloat, floatingWhatsApp);
+  }
+
   // ─── ACTIVE NAV LINK ───
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-desktop a, .mobile-nav a').forEach(link => {
