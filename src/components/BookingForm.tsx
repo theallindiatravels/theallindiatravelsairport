@@ -3,6 +3,7 @@ import { MessageCircle, Phone } from 'lucide-react';
 import { waLink, site } from '@/data/site';
 import OpenStreetMapPlaceInput, { Coordinates } from '@/components/OpenStreetMapPlaceInput';
 import { getDrivingRoute } from '@/lib/osrm';
+import { estimateFare, TripType, VehicleType } from '@/lib/fare';
 
 export default function BookingForm() {
   const [form, setForm] = useState({
@@ -12,10 +13,14 @@ export default function BookingForm() {
     drop: '',
     date: '',
     vehicle: 'Sedan',
+    tripType: 'One Way',
   });
   const [pickupCoordinates, setPickupCoordinates] = useState<Coordinates | null>(null);
   const [dropCoordinates, setDropCoordinates] = useState<Coordinates | null>(null);
   const [route, setRoute] = useState<{ distanceKm: number; durationMinutes: number } | null>(null);
+  const fare = route
+    ? estimateFare(route.distanceKm, form.vehicle as VehicleType, form.tripType as TripType)
+    : null;
 
   useEffect(() => {
     if (!pickupCoordinates || !dropCoordinates) {
@@ -36,7 +41,7 @@ export default function BookingForm() {
   }, [pickupCoordinates, dropCoordinates]);
 
   const routeDetails = route
-    ? `\nEstimated distance: ${route.distanceKm.toFixed(1)} km\nEstimated duration: ${route.durationMinutes} minutes`
+    ? `\nEstimated distance: ${route.distanceKm.toFixed(1)} km\nBillable distance: ${fare?.billableDistanceKm.toFixed(1) ?? 'On request'} km\nEstimated duration: ${route.durationMinutes} minutes${fare ? `\nRough fare: ₹${fare.fare.toLocaleString('en-IN')}` : ''}`
     : '';
   const message = `Hi, I want to book a cab.\n\nName: ${form.name}\nPhone: ${form.phone}\nPickup: ${form.pickup}\nDrop: ${form.drop}\nDate: ${form.date}\nVehicle: ${form.vehicle}${routeDetails}`;
 
@@ -87,6 +92,15 @@ export default function BookingForm() {
             Estimated driving distance: <span className="font-semibold text-gray-700">{route.distanceKm.toFixed(1)} km</span>
             {' · '}
             {route.durationMinutes} minutes
+            {fare && (
+              <>
+                <br />
+                Rough {form.tripType.toLowerCase()} fare: <span className="font-semibold text-primary-700">₹{fare.fare.toLocaleString('en-IN')}</span>
+              </>
+            )}
+            {!fare && <><br />Tempo Traveller fare: <span className="font-semibold text-gray-700">on request</span></>}
+            <br />
+            <span className="text-[11px]">Rough estimate only; tolls, parking and driver allowance may be extra.</span>
           </p>
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -104,6 +118,14 @@ export default function BookingForm() {
             <option>Sedan</option>
             <option>SUV / Innova</option>
             <option>Tempo Traveller</option>
+          </select>
+          <select
+            value={form.tripType}
+            onChange={(e) => setForm({ ...form, tripType: e.target.value })}
+            className="input-field text-sm"
+          >
+            <option>One Way</option>
+            <option>Round Trip</option>
           </select>
         </div>
         <a

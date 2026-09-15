@@ -110,10 +110,10 @@ export const fleet = [
 export const fareTable = [
   { service: 'Airport Pickup / Drop', vehicle: 'Sedan (Dzire / Etios)', seats: '4 Pax', fare: '₹499 onwards', includes: 'Flight tracking, 45-min free wait, AC, baggage aid' },
   { service: 'Airport Pickup / Drop', vehicle: 'SUV (Innova / Ertiga)', seats: '6-7 Pax', fare: '₹899 onwards', includes: 'Extra luggage boot, dual AC, nameboard greeting' },
-  { service: 'One Way Outstation', vehicle: 'Sedan (Dzire / Etios)', seats: '4 Pax', fare: '₹11 / km', includes: 'Pay strictly one side, door-to-door drop, private cab' },
-  { service: 'One Way Outstation', vehicle: 'SUV (Innova Crysta)', seats: '6-7 Pax', fare: '₹16 / km', includes: 'No return charge, captain reclining seats, spacious' },
-  { service: 'Round-Trip Outstation', vehicle: 'Prime Sedan', seats: '4 Pax', fare: '₹9 / km', includes: 'Dedicated car & driver for entire multi-day trip' },
-  { service: 'Round-Trip Outstation', vehicle: 'Toyota Innova SUV', seats: '6-7 Pax', fare: '₹14 / km', includes: 'Ghat road certified driver, comfortable for hills' },
+  { service: 'One Way Outstation', vehicle: 'Sedan (Dzire / Etios)', seats: '4 Pax', fare: '₹15 / km', includes: 'Pay strictly one side, door-to-door drop, private cab' },
+  { service: 'One Way Outstation', vehicle: 'SUV (Innova Crysta)', seats: '6-7 Pax', fare: '₹22 / km', includes: 'No return charge, captain reclining seats, spacious' },
+  { service: 'Round-Trip Outstation', vehicle: 'Prime Sedan', seats: '4 Pax', fare: '₹14 / km', includes: 'Dedicated car & driver for entire multi-day trip' },
+  { service: 'Round-Trip Outstation', vehicle: 'Toyota Innova SUV', seats: '6-7 Pax', fare: '₹20 / km', includes: 'Ghat road certified driver, comfortable for hills' },
   { service: 'Local City Rental (8h/80km)', vehicle: 'Sedan / SUV', seats: '4-7 Pax', fare: '₹2,100 / ₹3,200', includes: 'City shopping, meetings, multiple stops across Chennai' },
   { service: 'Group / Pilgrimage', vehicle: 'Tempo Traveller (12-26s)', seats: '12-26 Pax', fare: 'On Request', includes: 'Pushback seats, LED TV, full family travel together' },
 ];
