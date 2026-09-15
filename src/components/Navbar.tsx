@@ -36,12 +36,8 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
               onClick={() => go(link.path)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 currentPath === link.path
-                  ? scrolled
-                    ? 'bg-primary-50 text-primary-700'
-                    : 'bg-white/15 text-white'
-                  : scrolled
-                    ? 'text-gray-600 hover:text-primary-700 hover:bg-gray-50'
-                    : 'text-gray-600 hover:text-primary-700 hover:bg-gray-50'
+                  ? 'bg-primary-50 text-primary-700'
+                  : 'text-gray-600 hover:text-primary-700 hover:bg-gray-50'
               }`}
             >
               {link.label}
