@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Phone, Car } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { navLinks, site, waLink } from '@/data/site';
 
 export default function Navbar({ currentPath, onNavigate }: { currentPath: string; onNavigate: (path: string) => void }) {
@@ -16,9 +16,11 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
     >
       <nav className="container-page flex items-center justify-between h-16 lg:h-20">
         <button onClick={() => go('/')} className="flex items-center gap-2.5 group">
-          <div className="w-10 h-10 rounded-xl bg-primary-600 flex items-center justify-center shadow-lg shadow-primary-600/30 group-hover:scale-105 transition-transform">
-            <Car className="w-5 h-5 text-white" />
-          </div>
+          <img
+            src="/logo.png"
+            alt="The All India Travels"
+            className="h-10 w-10 rounded-xl object-cover shadow-lg shadow-primary-600/30 transition-transform group-hover:scale-105"
+          />
           <div className="text-left">
             <span className="block font-display font-bold text-sm sm:text-base leading-tight text-gray-900">
               The All India Travels
