@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 import { waLink, site } from '@/data/site';
+import OpenStreetMapPlaceInput, { Coordinates } from '@/components/OpenStreetMapPlaceInput';
+import { getDrivingRoute } from '@/lib/osrm';
 
 export default function BookingForm() {
   const [form, setForm] = useState({
@@ -11,8 +13,32 @@ export default function BookingForm() {
     date: '',
     vehicle: 'Sedan',
   });
+  const [pickupCoordinates, setPickupCoordinates] = useState<Coordinates | null>(null);
+  const [dropCoordinates, setDropCoordinates] = useState<Coordinates | null>(null);
+  const [route, setRoute] = useState<{ distanceKm: number; durationMinutes: number } | null>(null);
 
-  const message = `Hi, I want to book a cab.\n\nName: ${form.name}\nPhone: ${form.phone}\nPickup: ${form.pickup}\nDrop: ${form.drop}\nDate: ${form.date}\nVehicle: ${form.vehicle}`;
+  useEffect(() => {
+    if (!pickupCoordinates || !dropCoordinates) {
+      setRoute(null);
+      return;
+    }
+    let active = true;
+    getDrivingRoute(pickupCoordinates, dropCoordinates)
+      .then((result) => {
+        if (active) setRoute(result);
+      })
+      .catch(() => {
+        if (active) setRoute(null);
+      });
+    return () => {
+      active = false;
+    };
+  }, [pickupCoordinates, dropCoordinates]);
+
+  const routeDetails = route
+    ? `\nEstimated distance: ${route.distanceKm.toFixed(1)} km\nEstimated duration: ${route.durationMinutes} minutes`
+    : '';
+  const message = `Hi, I want to book a cab.\n\nName: ${form.name}\nPhone: ${form.phone}\nPickup: ${form.pickup}\nDrop: ${form.drop}\nDate: ${form.date}\nVehicle: ${form.vehicle}${routeDetails}`;
 
   return (
     <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 border border-gray-100">
@@ -41,20 +67,27 @@ export default function BookingForm() {
             className="input-field text-sm"
           />
         </div>
-        <input
-          type="text"
+        <OpenStreetMapPlaceInput
           placeholder="Pickup Location"
           value={form.pickup}
-          onChange={(e) => setForm({ ...form, pickup: e.target.value })}
+          onChange={(pickup) => setForm({ ...form, pickup })}
+          onSelect={setPickupCoordinates}
           className="input-field text-sm"
         />
-        <input
-          type="text"
+        <OpenStreetMapPlaceInput
           placeholder="Drop Destination"
           value={form.drop}
-          onChange={(e) => setForm({ ...form, drop: e.target.value })}
+          onChange={(drop) => setForm({ ...form, drop })}
+          onSelect={setDropCoordinates}
           className="input-field text-sm"
         />
+        {route && (
+          <p className="text-xs text-gray-500">
+            Estimated driving distance: <span className="font-semibold text-gray-700">{route.distanceKm.toFixed(1)} km</span>
+            {' · '}
+            {route.durationMinutes} minutes
+          </p>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <input
             type="date"

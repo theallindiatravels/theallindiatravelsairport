@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { site, waLink, faqs, seoPages } from '@/data/site';
 import SectionHeader from '@/components/SectionHeader';
 import SEO from '@/components/SEO';
+import OpenStreetMapPlaceInput from '@/components/OpenStreetMapPlaceInput';
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -111,11 +112,10 @@ export default function Contact() {
                 <label className="text-sm font-medium text-gray-700 mb-1.5 block">Pickup Location</label>
                 <div className="relative">
                   <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="text"
+                  <OpenStreetMapPlaceInput
                     placeholder="Where should we pick you up?"
                     value={form.pickup}
-                    onChange={(e) => setForm({ ...form, pickup: e.target.value })}
+                    onChange={(pickup) => setForm({ ...form, pickup })}
                     className="input-field pl-10 text-sm"
                   />
                 </div>
@@ -124,11 +124,10 @@ export default function Contact() {
                 <label className="text-sm font-medium text-gray-700 mb-1.5 block">Drop Destination</label>
                 <div className="relative">
                   <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="text"
+                  <OpenStreetMapPlaceInput
                     placeholder="Where are you going?"
                     value={form.drop}
-                    onChange={(e) => setForm({ ...form, drop: e.target.value })}
+                    onChange={(drop) => setForm({ ...form, drop })}
                     className="input-field pl-10 text-sm"
                   />
                 </div>
