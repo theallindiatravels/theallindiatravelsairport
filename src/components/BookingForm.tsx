@@ -21,6 +21,8 @@ export default function BookingForm() {
   const fare = route
     ? estimateFare(route.distanceKm, form.vehicle as VehicleType, form.tripType as TripType)
     : null;
+  const hideTwentyKmCityFare = form.tripType === 'Inside City' && fare?.billableDistanceKm === 20;
+  const displayFare = fare && !hideTwentyKmCityFare ? `₹${fare.fare.toLocaleString('en-IN')}` : null;
 
   useEffect(() => {
     if (!pickupCoordinates || !dropCoordinates) {
@@ -41,7 +43,7 @@ export default function BookingForm() {
   }, [pickupCoordinates, dropCoordinates]);
 
   const routeDetails = route
-    ? `\nEstimated distance: ${route.distanceKm.toFixed(1)} km\nBillable distance: ${fare?.billableDistanceKm.toFixed(1) ?? 'On request'} km\nEstimated duration: ${route.durationMinutes} minutes${fare ? `\nRough fare: ₹${fare.fare.toLocaleString('en-IN')}` : ''}`
+    ? `\nEstimated distance: ${route.distanceKm.toFixed(1)} km\nBillable distance: ${fare?.billableDistanceKm.toFixed(1) ?? 'On request'} km\nEstimated duration: ${route.durationMinutes} minutes${displayFare ? `\nRough fare: ${displayFare}` : ''}`
     : '';
   const message = `Hi, I want to book a cab.\n\nName: ${form.name}\nPhone: ${form.phone}\nPickup: ${form.pickup}\nDrop: ${form.drop}\nDate: ${form.date}\nVehicle: ${form.vehicle}${routeDetails}`;
 
@@ -92,13 +94,14 @@ export default function BookingForm() {
             Estimated driving distance: <span className="font-semibold text-gray-700">{route.distanceKm.toFixed(1)} km</span>
             {' · '}
             {route.durationMinutes} minutes
-            {fare && (
+            {displayFare && (
               <>
                 <br />
-                Rough {form.tripType.toLowerCase()} fare: <span className="font-semibold text-primary-700">₹{fare.fare.toLocaleString('en-IN')}</span>
+                Rough {form.tripType.toLowerCase()} fare: <span className="font-semibold text-primary-700">{displayFare}</span>
               </>
             )}
             {!fare && <><br />Tempo Traveller fare: <span className="font-semibold text-gray-700">on request</span></>}
+            {hideTwentyKmCityFare && <><br /><span className="text-[11px]">Fare available on request for this distance.</span></>}
             <br />
             <span className="text-[11px]">Rough estimate only; tolls, parking and driver allowance may be extra.</span>
           </p>
@@ -124,6 +127,7 @@ export default function BookingForm() {
             onChange={(e) => setForm({ ...form, tripType: e.target.value })}
             className="input-field text-sm"
           >
+            <option>Inside City</option>
             <option>One Way</option>
             <option>Round Trip</option>
           </select>
