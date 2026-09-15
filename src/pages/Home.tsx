@@ -104,7 +104,7 @@ export default function Home({ onNavigate }: { onNavigate: (path: string) => voi
               return (
                 <div key={service.title} className="card overflow-hidden group">
                   <div className="relative h-48 overflow-hidden">
-                    <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={service.image} alt={service.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-3 left-4 flex items-center gap-2">
                       <div className="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center shadow-lg">
@@ -151,7 +151,7 @@ export default function Home({ onNavigate }: { onNavigate: (path: string) => voi
             {popularRoutes.map((route) => (
               <div key={`${route.from}-${route.to}`} className="card overflow-hidden group">
                 <div className="relative h-40 overflow-hidden">
-                  <img src={route.image} alt={`${route.from} to ${route.to}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={route.image} alt={`${route.from} to ${route.to}`} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                   <div className="absolute bottom-3 left-4 right-4 text-white">
                     <div className="flex items-center gap-1.5 text-sm font-medium">
@@ -205,7 +205,7 @@ export default function Home({ onNavigate }: { onNavigate: (path: string) => voi
             {fleet.map((vehicle) => (
               <div key={vehicle.name} className="card overflow-hidden group">
                 <div className="relative h-52 overflow-hidden">
-                  <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={vehicle.image} alt={vehicle.name} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900">{vehicle.name}</h3>
@@ -299,6 +299,8 @@ export default function Home({ onNavigate }: { onNavigate: (path: string) => voi
           <img
             src="https://images.pexels.com/photos/9432498/pexels-photo-9432498.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
             alt="Chennai city"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-700/95 to-primary-600/80" />

@@ -93,7 +93,7 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
               </button>
             ))}
             <a
-              href={waLink('Hi, I want to book a cab. Please share fare details.')}
+              href={waLink('I want to book a cab. Please share fare details.')}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp mt-2"

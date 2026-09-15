@@ -13,7 +13,11 @@ export const site = {
 };
 
 export const waLink = (text: string) =>
-  `https://wa.me/${site.phoneRaw}?text=${encodeURIComponent(text)}`;
+  `https://wa.me/${site.phoneRaw}?text=${encodeURIComponent(
+    text.includes(site.name)
+      ? text
+      : `Hi, ${site.name}. ${text.replace(/^Hi,\s*/i, '')}`,
+  )}`;
 
 export const navLinks = [
   { label: 'Home', path: '/' },

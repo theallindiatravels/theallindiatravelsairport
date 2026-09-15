@@ -63,11 +63,6 @@ const organizationLd = {
   },
   openingHours: 'Mo-Su 00:00-23:59',
   priceRange: '₹399 - ₹7,999',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: site.rating,
-    reviewCount: '10000',
-  },
 };
 
 export default function SEO({ title, description, path, image, type = 'website', keywords, structuredData }: SEOData) {
