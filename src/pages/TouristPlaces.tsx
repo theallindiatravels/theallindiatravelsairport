@@ -20,7 +20,7 @@ export default function TouristPlaces() {
         <div className="container-page relative z-10 text-center text-white">
           <span className="badge bg-primary-500/90 text-white mb-4">Tourist Places</span>
           <h1 className="text-4xl sm:text-5xl font-bold font-display text-white text-balance">
-            Explore South India with The All India Travels
+            Explore South India with The All India Travels Airport
           </h1>
           <p className="mt-5 text-lg text-white/80 max-w-2xl mx-auto text-balance">
             From ancient temple towns to misty hill stations and French-colonial beach promenades — discover the best of Tamil Nadu and beyond with our custom tour packages.

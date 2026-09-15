@@ -242,7 +242,7 @@ export default function Home({ onNavigate }: { onNavigate: (path: string) => voi
           <SectionHeader
             badge="How It Works"
             title="Book Your Ride in 4 Easy Steps"
-            subtitle="Booking your ride with The All India Travels takes less than 60 seconds — no mandatory app downloads or advance registration."
+            subtitle="Booking your ride with The All India Travels Airport takes less than 60 seconds — no mandatory app downloads or advance registration."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {bookingSteps.map((step, i) => (
@@ -267,7 +267,7 @@ export default function Home({ onNavigate }: { onNavigate: (path: string) => voi
           <SectionHeader
             badge="Testimonials"
             title="What Our Passengers Say"
-            subtitle="Real reviews from real travellers who chose The All India Travels for their airport and outstation journeys."
+            subtitle="Real reviews from real travellers who chose The All India Travels Airport for their airport and outstation journeys."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {testimonials.map((t) => (

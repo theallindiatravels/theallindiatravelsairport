@@ -18,12 +18,12 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
         <button onClick={() => go('/')} className="flex items-center gap-2.5 group">
           <img
             src="/logo.png"
-            alt="The All India Travels"
+            alt="The All India Travels Airport"
             className="h-10 w-10 rounded-xl object-cover shadow-lg shadow-primary-600/30 transition-transform group-hover:scale-105"
           />
           <div className="text-left">
             <span className="block font-display font-bold text-sm sm:text-base leading-tight text-gray-900">
-              The All India Travels
+              The All India Travels Airport
             </span>
             <span className="block text-xs leading-tight text-gray-500">
               Chennai Airport Taxi
@@ -56,7 +56,7 @@ export default function Navbar({ currentPath, onNavigate }: { currentPath: strin
             {site.phone}
           </a>
           <a
-            href={waLink('Hi, I want to book a cab. Please share fare details.')}
+            href={waLink('Hi, The All India Travels Airport. I want to book a cab. Please share fare details.')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-whatsapp text-sm"

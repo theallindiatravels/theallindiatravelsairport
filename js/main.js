@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const callFloat = document.createElement('a');
     callFloat.href = 'tel:+919363539853';
     callFloat.className = 'call-float';
-    callFloat.setAttribute('aria-label', 'Call The All India Travels');
+    callFloat.setAttribute('aria-label', 'Call The All India Travels Airport');
     callFloat.textContent = '📞';
     floatingWhatsApp.parentElement.insertBefore(callFloat, floatingWhatsApp);
   }
@@ -155,11 +155,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const el = document.getElementById(f.id);
         if (el) data[f.label] = el.value.trim();
       });
-      let msg = '🚖 *New Taxi Booking Enquiry*\n━━━━━━━━━━━━━━━━\n\n';
+      let msg = '🚖 *The All India Travels Airport — New Taxi Booking Enquiry*\n━━━━━━━━━━━━━━━━\n\n';
       for (const [k, v] of Object.entries(data)) {
         if (v) msg += `*${k}:* ${v}\n`;
       }
-      msg += '\n_Sent from theallindiatravels.online_';
+      msg += '\n_Sent from The All India Travels Airport — theallindiatravels.online_';
       window.open('https://wa.me/919363539853?text=' + encodeURIComponent(msg), '_blank');
     });
   }
