@@ -116,6 +116,7 @@ export default function Contact() {
                     placeholder="Where should we pick you up?"
                     value={form.pickup}
                     onChange={(pickup) => setForm({ ...form, pickup })}
+                    enableCurrentLocation
                     className="input-field pl-10 text-sm"
                   />
                 </div>

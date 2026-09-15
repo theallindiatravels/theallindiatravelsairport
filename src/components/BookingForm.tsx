@@ -72,6 +72,7 @@ export default function BookingForm() {
           value={form.pickup}
           onChange={(pickup) => setForm({ ...form, pickup })}
           onSelect={setPickupCoordinates}
+          enableCurrentLocation
           className="input-field text-sm"
         />
         <OpenStreetMapPlaceInput
