@@ -9,11 +9,10 @@ const rates: Record<Exclude<VehicleType, 'Tempo Traveller'>, Record<TripType, nu
 export function estimateFare(distanceKm: number, vehicle: VehicleType, tripType: TripType) {
   if (vehicle === 'Tempo Traveller') return null;
 
-  const billableDistanceKm = tripType === 'Inside City'
-    ? Math.max(10, Math.ceil(distanceKm / 10) * 10)
-    : tripType === 'Round Trip'
-      ? distanceKm * 2
-      : distanceKm;
+  const roundedOneWayDistanceKm = Math.max(10, Math.ceil(distanceKm / 10) * 10);
+  const billableDistanceKm = tripType === 'Round Trip'
+    ? roundedOneWayDistanceKm * 2
+    : roundedOneWayDistanceKm;
   const rate = rates[vehicle][tripType];
 
   return {
