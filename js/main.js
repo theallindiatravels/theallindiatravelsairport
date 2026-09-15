@@ -44,6 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
   if (hamburger && mobileNav) {
+    if (!mobileNav.querySelector('a[href^="tel:"]')) {
+      const callLink = document.createElement('a');
+      callLink.href = 'tel:+919363539853';
+      callLink.className = 'btn btn-secondary';
+      callLink.textContent = '📞 Call Now';
+      mobileNav.appendChild(callLink);
+    }
+
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       mobileNav.classList.toggle('active');
@@ -57,6 +65,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       });
     });
+  }
+
+  const floatingWhatsApp = document.querySelector('.wa-float');
+  if (floatingWhatsApp && !document.querySelector('.call-float')) {
+    const callFloat = document.createElement('a');
+    callFloat.href = 'tel:+919363539853';
+    callFloat.className = 'call-float';
+    callFloat.setAttribute('aria-label', 'Call The All India Travels Airport');
+    callFloat.textContent = '📞';
+    floatingWhatsApp.parentElement.insertBefore(callFloat, floatingWhatsApp);
   }
 
   // ─── ACTIVE NAV LINK ───
@@ -137,11 +155,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const el = document.getElementById(f.id);
         if (el) data[f.label] = el.value.trim();
       });
-      let msg = '🚖 *New Taxi Booking Enquiry*\n━━━━━━━━━━━━━━━━\n\n';
+      let msg = '🚖 *The All India Travels Airport — New Taxi Booking Enquiry*\n━━━━━━━━━━━━━━━━\n\n';
       for (const [k, v] of Object.entries(data)) {
         if (v) msg += `*${k}:* ${v}\n`;
       }
-      msg += '\n_Sent from theallindiatravels.online_';
+      msg += '\n_Sent from The All India Travels Airport — theallindiatravels.online_';
       window.open('https://wa.me/919363539853?text=' + encodeURIComponent(msg), '_blank');
     });
   }

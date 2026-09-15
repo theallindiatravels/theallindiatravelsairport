@@ -11,7 +11,7 @@ export interface SEOData {
   structuredData?: object;
 }
 
-const BASE_URL = 'https://theallindiatravelsairport.com';
+const BASE_URL = 'https://www.theallindiatravels.online';
 
 function setMeta(attr: 'name' | 'property', key: string, content: string) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
@@ -63,11 +63,6 @@ const organizationLd = {
   },
   openingHours: 'Mo-Su 00:00-23:59',
   priceRange: '₹399 - ₹7,999',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: site.rating,
-    reviewCount: '10000',
-  },
 };
 
 export default function SEO({ title, description, path, image, type = 'website', keywords, structuredData }: SEOData) {

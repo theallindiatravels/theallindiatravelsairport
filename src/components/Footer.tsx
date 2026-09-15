@@ -25,7 +25,7 @@ export default function Footer({ onNavigate }: { onNavigate: (path: string) => v
                 <Car className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="block font-display font-bold text-white text-sm">The All India Travels</span>
+                <span className="block font-display font-bold text-white text-sm">The All India Travels Airport</span>
                 <span className="block text-xs text-gray-500">Chennai Airport Taxi</span>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function Footer({ onNavigate }: { onNavigate: (path: string) => v
       <div className="border-t border-gray-800">
         <div className="container-page py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} The All India Travels. All rights reserved.
+            © {new Date().getFullYear()} The All India Travels Airport. All rights reserved.
           </p>
           <p className="text-xs text-gray-500">
             Chennai Airport Taxi & Outstation Cabs — Serving Tamil Nadu since {site.founded}

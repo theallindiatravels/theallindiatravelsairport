@@ -1,5 +1,5 @@
 export const site = {
-  name: 'The All India Travels',
+  name: 'The All India Travels Airport',
   tagline: 'Chennai Airport Taxi & Outstation Cabs',
   phone: '+91 93635 39853',
   phoneRaw: '919363539853',
@@ -13,7 +13,11 @@ export const site = {
 };
 
 export const waLink = (text: string) =>
-  `https://wa.me/${site.phoneRaw}?text=${encodeURIComponent(text)}`;
+  `https://wa.me/${site.phoneRaw}?text=${encodeURIComponent(
+    text.includes(site.name)
+      ? text
+      : `Hi, ${site.name}. ${text.replace(/^Hi,\s*/i, '')}`,
+  )}`;
 
 export const navLinks = [
   { label: 'Home', path: '/' },
@@ -202,7 +206,7 @@ export const testimonials = [
     name: 'Priya Venkatesh',
     role: 'NRI Traveller, Singapore',
     rating: 5,
-    text: 'Used The All India Travels for a 5-day temple tour — Tirupati, Kanchipuram, and Madurai. The driver knew all the temple timings and VIP darshan queues. Felt completely safe as a solo female traveller.',
+    text: 'Used The All India Travels Airport for a 5-day temple tour — Tirupati, Kanchipuram, and Madurai. The driver knew all the temple timings and VIP darshan queues. Felt completely safe as a solo female traveller.',
   },
   {
     name: 'Mohammed Faisal',
@@ -349,7 +353,7 @@ export const extendedTestimonials = [
     name: 'Kavitha Krishnan',
     role: 'Doctor, Apollo Hospitals',
     rating: 5,
-    text: 'I use The All India Travels for my daily airport commutes between home and Chennai airport. Always on time, clean cars, and the drivers are courteous. The monthly corporate package saves me a lot compared to app-based cabs.',
+    text: 'I use The All India Travels Airport for my daily airport commutes between home and Chennai airport. Always on time, clean cars, and the drivers are courteous. The monthly corporate package saves me a lot compared to app-based cabs.',
   },
   {
     name: 'Vigneshwaran P',
@@ -411,53 +415,53 @@ export const extendedFaqs = [
 
 export const seoPages = {
   '/': {
-    title: 'Chennai Airport Taxi | Best Cab Service Chennai | One Way Taxi Tamil Nadu — The All India Travels',
+    title: 'Chennai Airport Taxi | Best Cab Service Chennai | One Way Taxi Tamil Nadu — The All India Travels Airport',
     description: 'Book Chennai Airport Taxi & Outstation Cabs. 24/7 airport transfers from Chennai International Airport (MAA), one-way outstation taxi, temple tours & holiday trips across Tamil Nadu, Pondicherry & South India. No surge pricing.',
     keywords: ['chennai airport taxi', 'chennai cab service', 'one way taxi chennai', 'outstation cab tamil nadu', 'airport pickup chennai', 'chennai to pondicherry taxi', 'chennai to tirupati cab'],
   },
   '/about': {
-    title: 'About The All India Travels | Chennai Airport Taxi Service Since 2016',
+    title: 'About The All India Travels Airport | Chennai Airport Taxi Service Since 2016',
     description: 'Family-owned Chennai airport taxi service since 2016. 50+ vehicles, 10,000+ happy passengers, 4.9-star rating. No surge pricing, live flight tracking, and professional chauffeurs across Tamil Nadu & South India.',
     keywords: ['about the all india travels', 'chennai taxi service', 'airport taxi chennai', 'family taxi business chennai'],
   },
   '/services': {
-    title: 'Taxi Services in Chennai | Airport Transfer, One Way, Outstation Cab — The All India Travels',
+    title: 'Taxi Services in Chennai | Airport Transfer, One Way, Outstation Cab — The All India Travels Airport',
     description: 'Comprehensive taxi services in Chennai: airport transfers, one-way outstation cabs, round-trip cabs, temple tours, holiday trips & corporate rentals. Transparent fares, professional drivers, 24/7 availability.',
     keywords: ['chennai taxi services', 'airport transfer chennai', 'one way cab chennai', 'outstation cab service', 'temple tour tamil nadu', 'corporate car rental chennai'],
   },
   '/routes': {
-    title: 'Chennai Taxi Fares & Routes | Airport Drop Rates | One Way Cab Prices — The All India Travels',
+    title: 'Chennai Taxi Fares & Routes | Airport Drop Rates | One Way Cab Prices — The All India Travels Airport',
     description: 'Transparent taxi fares from Chennai Airport to Tambaram, T Nagar, Velachery, OMR, Pondicherry, Tirupati, Madurai, Bangalore, Ooty & more. No surge pricing, no hidden charges.',
     keywords: ['chennai taxi fare', 'chennai to pondicherry taxi fare', 'chennai airport drop rate', 'one way cab price', 'chennai to tirupati fare', 'chennai to bangalore cab'],
   },
   '/tourist-places': {
-    title: 'Tourist Places Near Chennai | South India Tour Packages — The All India Travels',
+    title: 'Tourist Places Near Chennai | South India Tour Packages — The All India Travels Airport',
     description: 'Explore Pondicherry, Mahabalipuram, Tirupati, Madurai, Ooty, Kumbakonam & Rameswaram with custom tour packages from Chennai. Experienced drivers, AC vehicles, flexible itineraries.',
     keywords: ['tourist places near chennai', 'south india tour packages', 'pondicherry tour from chennai', 'tirupati package from chennai', 'ooty trip from chennai', 'temple tour tamil nadu'],
   },
   '/fleet': {
-    title: 'Our Fleet | Sedan, SUV Innova, Tempo Traveller — The All India Travels Chennai',
+    title: 'Our Fleet | Sedan, SUV Innova, Tempo Traveller — The All India Travels Airport Chennai',
     description: 'View our fleet of sedans (Dzire, Etios), SUVs (Innova Crysta, Ertiga), and Tempo Travellers (12-26 seater). All vehicles sanitized daily, 25-point safety checked, with chilled AC.',
     keywords: ['chennai taxi fleet', 'innova crysta rental chennai', 'tempo traveller chennai', 'sedan taxi chennai', 'suv cab chennai'],
   },
   '/gallery': {
-    title: 'Gallery | Chennai Taxi, Tourist Destinations & Temples — The All India Travels',
+    title: 'Gallery | Chennai Taxi, Tourist Destinations & Temples — The All India Travels Airport',
     description: 'Photo gallery of our taxi services, South Indian tourist destinations, temples, hill stations, and highway journeys across Tamil Nadu, Pondicherry & South India.',
     keywords: ['chennai taxi gallery', 'tamil nadu tourist photos', 'south india temple photos', 'ooty photos', 'pondicherry photos'],
   },
   '/reviews': {
-    title: 'Customer Reviews | 10,000+ Happy Passengers — The All India Travels Chennai',
+    title: 'Customer Reviews | 10,000+ Happy Passengers — The All India Travels Airport Chennai',
     description: 'Read genuine customer reviews from 10,000+ happy passengers. 4.9-star average rating for airport taxi, outstation cab, temple tour, and corporate travel services in Chennai.',
     keywords: ['chennai taxi reviews', 'the all india travels reviews', 'chennai cab service review', 'airport taxi chennai feedback'],
   },
   '/faq': {
-    title: 'FAQ | Chennai Airport Taxi & Outstation Cab Questions Answered — The All India Travels',
+    title: 'FAQ | Chennai Airport Taxi & Outstation Cab Questions Answered — The All India Travels Airport',
     description: 'Answers to all your questions about Chennai airport taxi booking, one-way outstation fares, flight tracking, payment methods, cancellation policy, GST invoices, and more.',
     keywords: ['chennai taxi faq', 'airport taxi questions', 'outstation cab faq', 'one way taxi questions', 'chennai cab booking help'],
   },
   '/contact': {
-    title: 'Contact The All India Travels | Book Chennai Taxi 24/7',
-    description: 'Contact The All India Travels for Chennai airport taxi, outstation cab, temple tour, or corporate car rental bookings. Call +91 93635 39853 or WhatsApp 24/7. Instant quotes.',
+    title: 'Contact The All India Travels Airport | Book Chennai Taxi 24/7',
+    description: 'Contact The All India Travels Airport for Chennai airport taxi, outstation cab, temple tour, or corporate car rental bookings. Call +91 93635 39853 or WhatsApp 24/7. Instant quotes.',
     keywords: ['contact chennai taxi', 'book chennai cab', 'chennai airport taxi contact', 'whatsapp taxi booking chennai'],
   },
 };

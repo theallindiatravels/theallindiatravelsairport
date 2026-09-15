@@ -24,7 +24,7 @@ export default function Reviews() {
             10,000+ Happy Passengers & Counting
           </h1>
           <p className="mt-5 text-lg text-white/80 max-w-2xl mx-auto text-balance">
-            Real reviews from real travellers who chose The All India Travels for their airport and outstation journeys across Tamil Nadu and South India.
+            Real reviews from real travellers who chose The All India Travels Airport for their airport and outstation journeys across Tamil Nadu and South India.
           </p>
         </div>
       </section>

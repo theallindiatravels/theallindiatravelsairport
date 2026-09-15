@@ -1,0 +1,17 @@
+{
+  "name": "The All India Travels Airport",
+  "short_name": "All India Travels",
+  "description": "24/7 Chennai airport taxi and outstation cab service.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#023047",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
