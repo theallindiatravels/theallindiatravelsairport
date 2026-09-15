@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chennai Taxi Fares & Routes | Airport Drop Rates | One Way Cab Prices — The All India Travels</title>
+  <meta name="description" content="Transparent Chennai taxi fares & route rates. Flat airport drop rates to T.Nagar, Anna Nagar, OMR, Velachery. Affordable one-way cabs to Pondicherry, Tirupati, Madurai, Ooty, Bangalore. Call +91 93635 39853." />
+  <meta name="keywords" content="chennai taxi fares, chennai airport taxi rate, airport drop rates chennai, one way cab prices chennai, outstation taxi fare chart, chennai to pondicherry taxi fare, chennai to tirupati cab price, innova per km rate chennai, tempo traveller tariff chennai, one way drop taxi tamil nadu" />
+  <meta name="author" content="The All India Travels" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.theallindiatravels.online/routes.html" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Chennai Taxi Fares & Routes | Airport Drop Rates | One Way Cab Prices — The All India Travels" />
+  <meta property="og:description" content="Best taxi fare tariff in Chennai. Airport transfers from ₹399 & one-way outstation cabs across Tamil Nadu, Andhra & Karnataka. Instant WhatsApp quotes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.theallindiatravels.online/routes.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chennai Taxi Fares & Routes | The All India Travels" />
+  <meta name="twitter:description" content="Transparent outstation & airport taxi fares in Chennai. No hidden charges. 24/7 service." />
+  <meta name="geo.region" content="IN-TN" />
+  <meta name="geo.placename" content="Chennai" />
+
+  <!-- Google Fonts: Poppins (400-900) & Playfair Display (600-800) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Custom Page Enhancements for Colorful Pricing Tables & Filters -->
+  <style>
+    /* Table & Route Page Specific Enhancements */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      margin-top: 24px;
+    }
+    .price-table {
+      margin-bottom: 0;
+      min-width: 640px;
+    }
+    .price-table th {
+      white-space: nowrap;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #ffffff;
+      padding: 16px 20px;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+    }
+    .price-table.table-blue th {
+      background: linear-gradient(135deg, var(--secondary-dark) 0%, var(--secondary) 100%);
+    }
+    .price-table.table-emerald th {
+      background: linear-gradient(135deg, #047857 0%, #10B981 100%);
+    }
+    .price-table.table-purple th {
+      background: linear-gradient(135deg, #6D28D9 0%, #8B5CF6 100%);
+    }
+    .price-table tbody tr {
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+    .price-table tbody tr:hover td {
+      background: rgba(255, 107, 0, 0.06);
+    }
+    .price-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      font-family: 'Poppins', sans-serif;
+      background: rgba(255, 107, 0, 0.12);
+      color: var(--primary-light);
+      border: 1px solid rgba(255, 107, 0, 0.25);
+    }
+    .price-badge-blue {
+      background: rgba(14, 165, 233, 0.12);
+      color: var(--secondary-light);
+      border-color: rgba(14, 165, 233, 0.25);
+    }
+    .price-badge-green {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--green-light);
+      border-color: rgba(16, 185, 129, 0.25);
+    }
+    .route-highlight {
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .route-pill {
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .pill-airport {
+      background: rgba(255, 107, 0, 0.2);
+      color: var(--primary-light);
+    }
+    .pill-oneway {
+      background: rgba(14, 165, 233, 0.2);
+      color: var(--secondary-light);
+    }
+    .pill-hill {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--green-light);
+    }
+    .pill-temple {
+      background: rgba(245, 158, 11, 0.2);
+      color: var(--amber-light);
+    }
+    .table-btn {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Filter & Search Toolbar */
+    .filter-toolbar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 260px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 12px 18px 12px 42px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: rgba(0, 0, 0, 0.25);
+      color: #fff;
+      font-size: 0.9rem;
+      outline: none;
+      transition: all 0.3s var(--ease);
+    }
+    .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-faint);
+      pointer-events: none;
+    }
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-tag-btn {
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.25s var(--ease);
+    }
+    .filter-tag-btn:hover,
+    .filter-tag-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    /* Comparison vs Cards */
+    .compare-vs-card {
+      background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.35s var(--ease), border-color 0.35s var(--ease);
+    }
+    .compare-vs-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+    }
+    .compare-vs-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .compare-feature-list {
+      list-style: none;
+      margin: 20px 0;
+      padding: 0;
+      flex: 1;
+    }
+    .compare-feature-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .compare-feature-list li:last-child {
+      border-bottom: none;
+    }
+    .check-icon {
+      color: var(--green-light);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* Fare Disclaimer Notice Box */
+    .notice-box {
+      background: linear-gradient(135deg, rgba(255, 107, 0, 0.1) 0%, rgba(14, 165, 233, 0.08) 100%);
+      border: 1.5px dashed rgba(255, 107, 0, 0.35);
+      border-radius: var(--radius);
+      padding: 26px 30px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .notice-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      display: grid;
+      place-items: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .notice-text h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+    .notice-text p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Quick jump anchors */
+    .jump-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .jump-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: all 0.25s var(--ease);
+    }
+    .jump-link:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .notice-box {
+        flex-direction: column;
+        text-align: center;
+      }
+      .filter-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .filter-tags {
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TaxiService",
+        "@id": "https://www.theallindiatravels.online/#taxiservice",
+        "name": "The All India Travels Airport",
+        "alternateName": "The All India Travels Chennai",
+        "description": "Transparent taxi tariff and fares for Chennai International Airport drops, one-way outstation cabs, round trips, and Tamil Nadu tour packages. 24/7 booking with zero hidden charges.",
+        "url": "https://www.theallindiatravels.online/routes.html",
+        "telephone": "+919363539853",
+        "email": "theallindiatravels@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "International Airport, Pallavaram, Meenambakkam",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600016",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "12.9941",
+          "longitude": "80.1709"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "₹399 - ₹8499",
+        "areaServed": [
+          "Chennai", "Pondicherry", "Tirupati", "Madurai", "Ooty",
+          "Kodaikanal", "Rameswaram", "Kanyakumari", "Coimbatore",
+          "Bangalore", "Mahabalipuram", "Trichy", "Salem", "Vellore"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.theallindiatravels.online/routes.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.theallindiatravels.online/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Routes & Fares",
+            "item": "https://www.theallindiatravels.online/routes.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.theallindiatravels.online/routes.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How are Chennai Airport taxi drop rates calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chennai Airport drop fares start at ₹399 for nearby hubs like Tambaram and ₹499-₹649 for central and IT corridors (T.Nagar, Adyar, Velachery, OMR). Fares include neat AC sedan transport with no peak-hour surges."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to pay return taxi fare for one-way outstation cabs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No! With our dedicated One-Way Drop Taxi service, you only pay for the one-sided journey distance from Chennai to your destination. Zero return empty-run charges."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are toll gate fees and parking charges included in the taxi quote?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard route fares indicate base vehicle tariff. Fastag tolls, state border permits, and parking are payable on actuals or can be bundled into an all-inclusive customized package when booked on WhatsApp."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader"><div class="loader-spinner"></div></div>
+<div class="scroll-progress"></div>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div>🚖 Chennai's #1 Airport Taxi & Outstation Cab — Book Now!</div>
+    <div class="topbar-links">
+      <a href="tel:+919363539853">📞 +91 93635 39853</a>
+      <a href="https://wa.me/919363539853" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">🚕</span>
+      <span class="brand-text">
+        <strong>The All India Travels</strong>
+        <small>AnyTime AnyWhere</small>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="routes.html">Routes & Fares</a></li>
+        <li><a href="tourist-places.html">Tourist Places</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-sm" href="https://wa.me/919363539853" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Book Now</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="routes.html">Routes & Fares</a>
+  <a href="tourist-places.html">Tourist Places</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919363539853" target="_blank" rel="noopener noreferrer">💬 Book on WhatsApp</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<main>
+
+  <!-- ═══════════════ PAGE HERO & BREADCRUMB ═══════════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span style="color: var(--primary-light); font-weight: 600;">Routes & Fares</span>
+      </nav>
+
+      <div class="fade-up">
+        <span class="section-label label-orange">Transparent & Fixed Taxi Pricing</span>
+        <h1>Chennai Taxi Fares & Route Tariff</h1>
+        <p>
+          Explore clear, pocket-friendly cab fares from Chennai International Airport across Tamil Nadu, Pondicherry, Andhra Pradesh, and Karnataka. Pay only for what you travel with zero surge tricks.
+        </p>
+
+        <!-- Quick Jump Links -->
+        <div class="jump-nav">
+          <a class="jump-link" href="#airport-drops">✈️ Airport City Drops</a>
+          <a class="jump-link" href="#outstation-routes">🗺️ One-Way Outstation Fares</a>
+          <a class="jump-link" href="#vehicle-rates">🚗 Vehicle Tariff Comparison</a>
+          <a class="jump-link" href="#oneway-vs-roundtrip">⚖️ One-Way vs Round-Trip</a>
+          <a class="jump-link" href="#quick-booking">📋 Instant Booking Form</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ STATS HIGHLIGHT STRIP ═══════════════ -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <span class="stat-num" data-count="399" data-prefix="₹">₹399</span>
+          <span class="stat-label">Starting Airport Drop Fare</span>
+        </div>
+        <div class="stat-item fade-up">
+          <span class="stat-num" data-count="25" data-suffix="+">25+</span>
+          <span class="stat-label">Popular Tamil Nadu Routes</span>
+        </div>
+        <div class="stat-item fade-up">
+          <span class="stat-num" data-count="0" data-suffix="% Surges">0% Surges</span>
+          <span class="stat-label">Zero Midnight Peak Pricing</span>
+        </div>
+        <div class="stat-item fade-up">
+          <span class="stat-num" data-count="10000" data-suffix="+ Trips">10,000+ Trips</span>
+          <span class="stat-label">Completed Seamless Rides</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SECTION 1: AIRPORT CITY DROP ROUTES ═══════════════ -->
+  <section id="airport-drops" class="section">
+    <div class="container">
+      <div class="fade-up text-center mx-auto" style="max-width:760px;">
+        <span class="section-label label-blue">✈️ Terminal 1 & 2 Pickup & Drop</span>
+        <h2 class="section-title">Chennai Airport City Drop Rates</h2>
+        <p class="section-subtitle mx-auto">
+          Arrived at Meenambakkam Airport? Skip the long taxi queues. Pre-book an air-conditioned, sanitized sedan with verified drivers waiting for you at the arrival ramp.
+        </p>
+      </div>
+
+      <!-- Pricing Table for Airport City Drops -->
+      <div class="table-container fade-up">
+        <table class="price-table" aria-label="Chennai Airport City Drop Fare Table">
+          <thead>
+            <tr>
+              <th scope="col">From / Pickup</th>
+              <th scope="col">To / Destination</th>
+              <th scope="col">Approx Distance</th>
+              <th scope="col">Avg Travel Time</th>
+              <th scope="col">Starting Fare (AC Sedan)</th>
+              <th scope="col" style="text-align:right;">Book Instantly</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Tambaram / Chromepet</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">GST Road, Bus Stand & Railway Junction</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">10 km</span></td>
+              <td>20 - 25 mins</td>
+              <td>
+                <span class="price-badge">₹399</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Tambaram%20(Fare%20Rs.399)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹399
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Velachery</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Phoenix Marketcity, Vijayanagar, Bypass</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">12 km</span></td>
+              <td>25 - 35 mins</td>
+              <td>
+                <span class="price-badge">₹449</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Velachery%20(Fare%20Rs.449)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹449
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">T. Nagar (Thyagaraya Nagar)</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Pondy Bazaar, Panagal Park, Usman Road</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">15 km</span></td>
+              <td>30 - 45 mins</td>
+              <td>
+                <span class="price-badge">₹499</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20T.Nagar%20(Fare%20Rs.499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹499
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Adyar / Besant Nagar</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">LB Road, Gandhi Nagar, Elliot's Beach</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">18 km</span></td>
+              <td>35 - 45 mins</td>
+              <td>
+                <span class="price-badge">₹549</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Adyar%20(Fare%20Rs.549)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹549
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Anna Nagar</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Roundtana, 2nd Avenue, Shanti Colony</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">20 km</span></td>
+              <td>40 - 55 mins</td>
+              <td>
+                <span class="price-badge">₹599</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Anna%20Nagar%20(Fare%20Rs.599)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹599
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">OMR / IT Corridor (Perungudi, Thoraipakkam, Sholinganallur)</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">TIDEL Park, Tech Parks, ECR Junction</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">22 km</span></td>
+              <td>40 - 50 mins</td>
+              <td>
+                <span class="price-badge">₹649</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20OMR%20IT%20Corridor%20(Fare%20Rs.649)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹649
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Chennai Central / Egmore Railway Stations</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Puratchi Thalaivar Dr. MGR Central Junction</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">20 km</span></td>
+              <td>45 - 60 mins</td>
+              <td>
+                <span class="price-badge">₹599</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Chennai%20Central%20(Fare%20Rs.599)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹599
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Koyambedu (CMBT Bus Terminus)</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Rohini Silver Screens, Metro & Market</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">16 km</span></td>
+              <td>35 - 45 mins</td>
+              <td>
+                <span class="price-badge">₹499</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Koyambedu%20(Fare%20Rs.499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹499
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="route-highlight">
+                  ✈️ Chennai Airport (MAA)
+                </span>
+              </td>
+              <td>
+                <strong style="color:#fff;">Siruseri SIPCOT IT Park</strong>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Navalur, TCS, Cognizant, Marina Mall</div>
+              </td>
+              <td><span class="badge label-orange" style="font-size:0.78rem;">28 km</span></td>
+              <td>50 - 65 mins</td>
+              <td>
+                <span class="price-badge">₹749</span>
+              </td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20from%20Chennai%20Airport%20to%20Siruseri%20SIPCOT%20(Fare%20Rs.749)" target="_blank" rel="noopener noreferrer">
+                  💬 Book ₹749
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Airport Features Mini Bar -->
+      <div class="grid-3 fade-up" style="margin-top: 30px;">
+        <div class="card" style="padding: 20px;">
+          <div style="font-size:1.8rem; margin-bottom:8px;">🛬</div>
+          <h4 style="font-size:1rem; font-family:'Poppins',sans-serif; color:#fff;">Flight Delay Tracking</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">We monitor your arrival status in real-time. No waiting fee if your incoming flight is delayed.</p>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div style="font-size:1.8rem; margin-bottom:8px;">🚪</div>
+          <h4 style="font-size:1rem; font-family:'Poppins',sans-serif; color:#fff;">Doorstep / Ramp Pickup</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Driver meets you at Arrival Gate with nameboard assistance upon request for overseas travelers.</p>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div style="font-size:1.8rem; margin-bottom:8px;">❄️</div>
+          <h4 style="font-size:1rem; font-family:'Poppins',sans-serif; color:#fff;">100% Guaranteed AC</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Beat Chennai humidity in chilled comfort with ample trunk boot space for suitcases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 2: ONE-WAY OUTSTATION ROUTES ═══════════════ -->
+  <section id="outstation-routes" class="section bg-gradient-1">
+    <div class="container">
+      <div class="fade-up text-center mx-auto" style="max-width:800px;">
+        <span class="section-label label-green">⚡ Save Up to 40% on Outstation Travel</span>
+        <h2 class="section-title">One-Way Outstation Taxi Tariff</h2>
+        <p class="section-subtitle mx-auto">
+          Pay exclusively for the distance you travel. No paying for empty return kilometers! Verified highway chauffeurs, toll-assist vehicles, and doorstep pickup anywhere in Chennai.
+        </p>
+      </div>
+
+      <!-- Search & Filter Controls -->
+      <div class="filter-toolbar fade-up">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="routeSearchInput" placeholder="Search destination (e.g. Pondicherry, Tirupati, Ooty, Bangalore)..." aria-label="Search route destination" />
+        </div>
+        <div class="filter-tags">
+          <button type="button" class="filter-tag-btn active" data-filter="all">All Routes (20+)</button>
+          <button type="button" class="filter-tag-btn" data-filter="popular">🔥 Popular</button>
+          <button type="button" class="filter-tag-btn" data-filter="hill">⛰️ Hill Stations</button>
+          <button type="button" class="filter-tag-btn" data-filter="pilgrim">🕉️ Pilgrimage</button>
+          <button type="button" class="filter-tag-btn" data-filter="business">🏙️ Metro & Cities</button>
+        </div>
+      </div>
+
+      <!-- One-Way Routes Table -->
+      <div class="table-container fade-up">
+        <table class="price-table table-emerald" id="outstationTable" aria-label="One-Way Outstation Taxi Fares Table">
+          <thead>
+            <tr>
+              <th scope="col">Route (From &rarr; To)</th>
+              <th scope="col">Category</th>
+              <th scope="col">Total Distance</th>
+              <th scope="col">Approx Duration</th>
+              <th scope="col">AC Sedan Fare</th>
+              <th scope="col">Innova / SUV Fare</th>
+              <th scope="col" style="text-align:right;">Book Route</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Route 1: Pondicherry -->
+            <tr data-category="popular">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Pondicherry (Puducherry)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Scenic ECR Coastal Highway &bull; Auroville & French Colony</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Popular</span></td>
+              <td><strong>150 km</strong></td>
+              <td>3.0 - 3.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹2,199</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹3,699</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Pondicherry%20One%20Way%20Taxi%20(Fare%20Rs.2199)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 2: Tirupati -->
+            <tr data-category="popular pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Tirupati (Tirumala)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Sri Venkateswara Swamy Temple Darshan &bull; Alipiri Gate</div>
+              </td>
+              <td><span class="route-pill pill-temple">Pilgrimage</span></td>
+              <td><strong>135 km</strong></td>
+              <td>3.0 - 3.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹1,999</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹3,499</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Tirupati%20One%20Way%20Cab%20(Fare%20Rs.1999)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 3: Madurai -->
+            <tr data-category="popular pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Madurai</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Meenakshi Amman Kovil &bull; Thirumalai Nayakkar Mahal</div>
+              </td>
+              <td><span class="route-pill pill-temple">Pilgrimage</span></td>
+              <td><strong>462 km</strong></td>
+              <td>7.5 - 8.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹5,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹8,299</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Madurai%20One%20Way%20Taxi%20(Fare%20Rs.5499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 4: Ooty -->
+            <tr data-category="hill popular">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Ooty (Udhagamandalam)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Queen of Hill Stations &bull; Nilgiri Tea Gardens & Nilgiri Ghats</div>
+              </td>
+              <td><span class="route-pill pill-hill">Hill Station</span></td>
+              <td><strong>560 km</strong></td>
+              <td>10 - 11 hrs</td>
+              <td><span class="price-badge price-badge-green">₹6,999</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹10,499</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Ooty%20One%20Way%20Taxi%20(Fare%20Rs.6999)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 5: Kodaikanal -->
+            <tr data-category="hill">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Kodaikanal</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Princess of Hill Stations &bull; Kodai Lake, Pillar Rocks & Coaker's Walk</div>
+              </td>
+              <td><span class="route-pill pill-hill">Hill Station</span></td>
+              <td><strong>527 km</strong></td>
+              <td>9.5 - 10.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹6,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹9,899</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Kodaikanal%20One%20Way%20Cab%20(Fare%20Rs.6499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 6: Rameswaram -->
+            <tr data-category="pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Rameswaram</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Pamban Bridge &bull; Ramanathaswamy Temple & Dhanushkodi</div>
+              </td>
+              <td><span class="route-pill pill-temple">Pilgrimage</span></td>
+              <td><strong>573 km</strong></td>
+              <td>10 - 11 hrs</td>
+              <td><span class="price-badge price-badge-green">₹7,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹10,999</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Rameswaram%20One%20Way%20Taxi%20(Fare%20Rs.7499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 7: Kanyakumari -->
+            <tr data-category="popular">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Kanyakumari</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Southern Tip of India &bull; Vivekananda Rock Memorial & Sunrise Point</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Scenic Coastal</span></td>
+              <td><strong>700 km</strong></td>
+              <td>11.5 - 12.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹8,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹12,499</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Kanyakumari%20One%20Way%20Taxi%20(Fare%20Rs.8499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 8: Coimbatore -->
+            <tr data-category="business popular">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Coimbatore (Kovai)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Manchester of South India &bull; Isha Yoga Center & Industrial Hub</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Business / Metro</span></td>
+              <td><strong>505 km</strong></td>
+              <td>8.5 - 9.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹5,999</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹8,999</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Coimbatore%20One%20Way%20Taxi%20(Fare%20Rs.5999)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 9: Bangalore -->
+            <tr data-category="business popular">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Bangalore (Bengaluru)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Electronic City, Whitefield, Kempegowda Airport & IT Parks</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Inter-State</span></td>
+              <td><strong>350 km</strong></td>
+              <td>5.5 - 6.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹4,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹6,999</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Bangalore%20One%20Way%20Cab%20(Fare%20Rs.4499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 10: Thanjavur -->
+            <tr data-category="pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Thanjavur (Tanjore)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">UNESCO Brihadeeswarar Big Temple & Maratha Palace</div>
+              </td>
+              <td><span class="route-pill pill-temple">Heritage & Temple</span></td>
+              <td><strong>340 km</strong></td>
+              <td>6.0 - 7.0 hrs</td>
+              <td><span class="price-badge price-badge-green">₹4,299</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹6,499</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Thanjavur%20One%20Way%20Cab%20(Fare%20Rs.4299)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 11: Mahabalipuram -->
+            <tr data-category="popular">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Mahabalipuram (Mamallapuram)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Shore Temple, Pancha Rathas & ECR Resorts</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Day Trip / Beach</span></td>
+              <td><strong>58 km</strong></td>
+              <td>1.2 - 1.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹1,299</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹2,199</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Mahabalipuram%20Cab%20(Fare%20Rs.1299)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 12: Vellore -->
+            <tr data-category="business pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Vellore</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">CMC Hospital & Vellore Golden Temple (Sripuram)</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Hospital / Heritage</span></td>
+              <td><strong>140 km</strong></td>
+              <td>2.5 - 3.0 hrs</td>
+              <td><span class="price-badge price-badge-green">₹1,999</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹3,399</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Vellore%20One%20Way%20Taxi%20(Fare%20Rs.1999)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 13: Salem -->
+            <tr data-category="business">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Salem</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Steel City, Mangoes & Yercaud Foothills</div>
+              </td>
+              <td><span class="route-pill pill-oneway">Commercial Hub</span></td>
+              <td><strong>340 km</strong></td>
+              <td>6.0 - 6.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹4,199</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹6,399</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Salem%20One%20Way%20Cab%20(Fare%20Rs.4199)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 14: Trichy -->
+            <tr data-category="pilgrim business">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Trichy (Tiruchirappalli)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Rockfort Temple & Sri Ranganathaswamy Kovil (Srirangam)</div>
+              </td>
+              <td><span class="route-pill pill-temple">Central Hub</span></td>
+              <td><strong>330 km</strong></td>
+              <td>5.5 - 6.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹4,099</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹6,299</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Trichy%20One%20Way%20Taxi%20(Fare%20Rs.4099)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 15: Munnar -->
+            <tr data-category="hill">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Munnar (Kerala)</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Misty Tea Plantations, Eravikulam & Mattupetty Dam</div>
+              </td>
+              <td><span class="route-pill pill-hill">Hill Station</span></td>
+              <td><strong>585 km</strong></td>
+              <td>11 - 12 hrs</td>
+              <td><span class="price-badge price-badge-green">₹7,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹11,499</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Munnar%20One%20Way%20Taxi%20(Fare%20Rs.7499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 16: Kanchipuram -->
+            <tr data-category="pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Kanchipuram</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">City of Thousand Temples & Kanchipuram Silk Sarees</div>
+              </td>
+              <td><span class="route-pill pill-temple">Temple Tour</span></td>
+              <td><strong>75 km</strong></td>
+              <td>1.5 - 2.0 hrs</td>
+              <td><span class="price-badge price-badge-green">₹1,499</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹2,499</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Kanchipuram%20Cab%20(Fare%20Rs.1499)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 17: Tiruvannamalai -->
+            <tr data-category="pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Tiruvannamalai</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Annamalaiyar Temple, Giri Valam & Sri Ramana Ashram</div>
+              </td>
+              <td><span class="route-pill pill-temple">Pilgrimage</span></td>
+              <td><strong>195 km</strong></td>
+              <td>3.5 - 4.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹2,799</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹4,299</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Tiruvannamalai%20One%20Way%20Taxi%20(Fare%20Rs.2799)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 18: Yercaud -->
+            <tr data-category="hill">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Yercaud</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Jewel of the South &bull; Shevaroy Hills & Botanical Garden</div>
+              </td>
+              <td><span class="route-pill pill-hill">Hill Station</span></td>
+              <td><strong>365 km</strong></td>
+              <td>6.5 - 7.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹4,699</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹7,299</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Yercaud%20One%20Way%20Taxi%20(Fare%20Rs.4699)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 19: Kumbakonam -->
+            <tr data-category="pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Kumbakonam</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Navagraha Temples Circuit &bull; Mahamaham Tank</div>
+              </td>
+              <td><span class="route-pill pill-temple">Pilgrimage</span></td>
+              <td><strong>290 km</strong></td>
+              <td>5.5 - 6.5 hrs</td>
+              <td><span class="price-badge price-badge-green">₹3,899</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹5,999</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Kumbakonam%20One%20Way%20Taxi%20(Fare%20Rs.3899)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+
+            <!-- Route 20: Chidambaram -->
+            <tr data-category="pilgrim">
+              <td>
+                <div class="route-highlight">Chennai &rarr; Chidambaram</div>
+                <div style="font-size:0.75rem; color:var(--text-faint);">Nataraja Temple & Pichavaram Mangrove Forest Boating</div>
+              </td>
+              <td><span class="route-pill pill-temple">Temple & Nature</span></td>
+              <td><strong>225 km</strong></td>
+              <td>4.5 - 5.0 hrs</td>
+              <td><span class="price-badge price-badge-green">₹3,199</span></td>
+              <td><span style="font-weight:700; color:var(--secondary-light);">₹4,999</span></td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20Chennai%20to%20Chidambaram%20One%20Way%20Taxi%20(Fare%20Rs.3199)" target="_blank" rel="noopener noreferrer">
+                  💬 Book Now
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Live Search Empty State (Hidden by default) -->
+      <div id="noRouteFound" style="display:none; text-align:center; padding:40px 20px; background:var(--surface); border-radius:var(--radius); margin-top:20px;">
+        <div style="font-size:2.5rem; margin-bottom:10px;">🔍</div>
+        <h4 style="color:#fff; font-family:'Poppins',sans-serif;">Destination Not Listed?</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; max-width:500px; margin:8px auto 16px;">
+          We operate across every corner of Tamil Nadu, Andhra Pradesh, Kerala & Karnataka. Ping us your pickup & drop points for a customized rate in 60 seconds!
+        </p>
+        <a class="btn btn-whatsapp" href="https://wa.me/919363539853?text=Hi%2C%20I%20need%20a%20fare%20quote%20for%20a%20custom%20route" target="_blank" rel="noopener noreferrer">
+          💬 Get Custom Quote on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 3: VEHICLE-WISE RATE COMPARISON ═══════════════ -->
+  <section id="vehicle-rates" class="section">
+    <div class="container">
+      <div class="fade-up text-center mx-auto" style="max-width:800px;">
+        <span class="section-label label-purple">🚘 Clean Fleet Tariff Comparison</span>
+        <h2 class="section-title">Vehicle-Wise Rate Comparison</h2>
+        <p class="section-subtitle mx-auto">
+          Choose from comfortable budget sedans to family Innova Crysta SUVs and group Tempo Travellers. Compare seating, luggage capacity, and outstation per-kilometer tariffs.
+        </p>
+      </div>
+
+      <!-- Vehicle Cards Grid -->
+      <div class="grid-3 fade-up" style="margin-top: 40px;">
+        <!-- Card 1: AC Sedan -->
+        <div class="card" style="border-top: 4px solid var(--primary);">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=380&fit=crop" alt="AC Sedan Swift Dzire Etios taxi" loading="lazy" />
+          </div>
+          <span class="badge label-orange" style="margin-bottom:10px; display:inline-block;">Most Popular & Economical</span>
+          <h3 style="font-family:'Poppins',sans-serif; font-size:1.3rem; color:#fff;">Comfort AC Sedan</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Maruti Swift Dzire, Toyota Etios, Hyundai Aura</p>
+          
+          <div style="margin:16px 0; padding:12px; background:rgba(255,255,255,0.03); border-radius:var(--radius-sm);">
+            <div style="font-size:0.75rem; color:var(--text-faint); text-transform:uppercase;">Outstation Tariff</div>
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-light); font-family:'Poppins',sans-serif;">₹13 - ₹14 <span style="font-size:0.85rem; color:var(--text-muted); font-weight:400;">/ km</span></div>
+          </div>
+
+          <ul style="font-size:0.85rem; color:var(--text-muted); line-height:1.9;">
+            <li>👥 <strong>Capacity:</strong> 4 Passengers + 1 Driver</li>
+            <li>🧳 <strong>Luggage:</strong> 2 Large Bags + 2 Handbags</li>
+            <li>❄️ <strong>Air Conditioning:</strong> High-cool digital AC</li>
+            <li>🎯 <strong>Ideal for:</strong> Couples, small families, airport transfers</li>
+          </ul>
+
+          <div style="margin-top:20px;">
+            <a class="btn btn-primary btn-block" href="https://wa.me/919363539853?text=Hi%2C%20I%20am%20interested%20in%20booking%20an%20AC%20Sedan%20(Dzire%2FEtios)" target="_blank" rel="noopener noreferrer">
+              💬 Book AC Sedan
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Innova / SUV -->
+        <div class="card" style="border-top: 4px solid var(--secondary);">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=380&fit=crop" alt="Toyota Innova Crysta SUV taxi" loading="lazy" />
+          </div>
+          <span class="badge label-blue" style="margin-bottom:10px; display:inline-block;">Spacious Family Choice</span>
+          <h3 style="font-family:'Poppins',sans-serif; font-size:1.3rem; color:#fff;">Toyota Innova & Crysta</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Toyota Innova, Innova Crysta, Maruti Ertiga</p>
+          
+          <div style="margin:16px 0; padding:12px; background:rgba(255,255,255,0.03); border-radius:var(--radius-sm);">
+            <div style="font-size:0.75rem; color:var(--text-faint); text-transform:uppercase;">Outstation Tariff</div>
+            <div style="font-size:1.5rem; font-weight:800; color:var(--secondary-light); font-family:'Poppins',sans-serif;">₹18 - ₹22 <span style="font-size:0.85rem; color:var(--text-muted); font-weight:400;">/ km</span></div>
+          </div>
+
+          <ul style="font-size:0.85rem; color:var(--text-muted); line-height:1.9;">
+            <li>👥 <strong>Capacity:</strong> 6 to 7 Passengers + 1 Driver</li>
+            <li>🧳 <strong>Luggage:</strong> 4 - 5 Large Suitcases</li>
+            <li>❄️ <strong>Air Conditioning:</strong> Dual roof-mounted AC vents</li>
+            <li>🎯 <strong>Ideal for:</strong> Hill station tours, temple trips, executive travel</li>
+          </ul>
+
+          <div style="margin-top:20px;">
+            <a class="btn btn-secondary btn-block" href="https://wa.me/919363539853?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20Toyota%20Innova%2FCrysta" target="_blank" rel="noopener noreferrer">
+              💬 Book Innova / SUV
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Tempo Traveller -->
+        <div class="card" style="border-top: 4px solid var(--purple);">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=380&fit=crop" alt="Tempo Traveller group taxi chennai" loading="lazy" />
+          </div>
+          <span class="badge label-purple" style="margin-bottom:10px; display:inline-block;">Large Group Travel</span>
+          <h3 style="font-family:'Poppins',sans-serif; font-size:1.3rem; color:#fff;">Tempo Traveller</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Force Tempo Traveller 12, 14 & 17 Seater AC</p>
+          
+          <div style="margin:16px 0; padding:12px; background:rgba(255,255,255,0.03); border-radius:var(--radius-sm);">
+            <div style="font-size:0.75rem; color:var(--text-faint); text-transform:uppercase;">Outstation Tariff</div>
+            <div style="font-size:1.5rem; font-weight:800; color:var(--purple-light); font-family:'Poppins',sans-serif;">₹24 - ₹28 <span style="font-size:0.85rem; color:var(--text-muted); font-weight:400;">/ km</span></div>
+          </div>
+
+          <ul style="font-size:0.85rem; color:var(--text-muted); line-height:1.9;">
+            <li>👥 <strong>Capacity:</strong> 12 to 17 Passengers + 1 Driver</li>
+            <li>🧳 <strong>Luggage:</strong> Dedicated rear luggage hold + overhead racks</li>
+            <li>❄️ <strong>Air Conditioning:</strong> Individual blower AC vents & pushback seats</li>
+            <li>🎯 <strong>Ideal for:</strong> Marriage parties, college trips, pilgrimage groups</li>
+          </ul>
+
+          <div style="margin-top:20px;">
+            <a class="btn btn-outline btn-block" href="https://wa.me/919363539853?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20Tempo%20Traveller%20(12-17%20Seater)" target="_blank" rel="noopener noreferrer">
+              💬 Book Tempo Traveller
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Comparison Table -->
+      <div class="table-container fade-up" style="margin-top: 40px;">
+        <table class="price-table table-purple" aria-label="Detailed Vehicle Tariff Comparison Table">
+          <thead>
+            <tr>
+              <th scope="col">Vehicle Segment</th>
+              <th scope="col">Models Offered</th>
+              <th scope="col">Capacity</th>
+              <th scope="col">Airport Drop (Base)</th>
+              <th scope="col">Outstation Per KM</th>
+              <th scope="col">Driver Batta / Day</th>
+              <th scope="col" style="text-align:right;">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Hatchback AC</strong>
+              </td>
+              <td>WagonR, Tiago, Celerio</td>
+              <td>4 Seater + 2 Bags</td>
+              <td><span class="price-badge">₹399</span></td>
+              <td>₹12 / km</td>
+              <td>₹300 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20enquire%20about%20Hatchback%20cabs" target="_blank" rel="noopener noreferrer">Inquire</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Prime AC Sedan</strong>
+              </td>
+              <td>Swift Dzire, Toyota Etios, Aura</td>
+              <td>4 Seater + 3 Bags</td>
+              <td><span class="price-badge">₹499</span></td>
+              <td>₹13 - ₹14 / km</td>
+              <td>₹400 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20an%20AC%20Sedan" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Family MUV (Ertiga)</strong>
+              </td>
+              <td>Maruti Ertiga, Kia Carens</td>
+              <td>6 Seater + 3 Bags</td>
+              <td><span class="price-badge price-badge-blue">₹749</span></td>
+              <td>₹16 - ₹17 / km</td>
+              <td>₹500 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20an%20Ertiga%2FCarens" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Premium SUV (Innova)</strong>
+              </td>
+              <td>Toyota Innova 2.5V</td>
+              <td>7 Seater + 4 Bags</td>
+              <td><span class="price-badge price-badge-blue">₹899</span></td>
+              <td>₹18 - ₹19 / km</td>
+              <td>₹500 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20Toyota%20Innova" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Luxury MPV (Innova Crysta)</strong>
+              </td>
+              <td>Toyota Innova Crysta Captain Seats</td>
+              <td>7 Seater + 5 Bags</td>
+              <td><span class="price-badge price-badge-blue">₹1,099</span></td>
+              <td>₹20 - ₹22 / km</td>
+              <td>₹600 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20an%20Innova%20Crysta" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Tempo Traveller (12 Seater)</strong>
+              </td>
+              <td>Force Cruiser / Traveller AC</td>
+              <td>12 Seater + 10 Bags</td>
+              <td><span class="price-badge" style="background:rgba(139,92,246,0.15); color:var(--purple-light); border-color:rgba(139,92,246,0.3);">₹1,899</span></td>
+              <td>₹24 - ₹26 / km</td>
+              <td>₹700 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%2012%20Seater%20Tempo%20Traveller" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong style="color:#fff;">Tempo Traveller (17 Seater)</strong>
+              </td>
+              <td>Force Luxury Coach AC</td>
+              <td>17 Seater + 14 Bags</td>
+              <td><span class="price-badge" style="background:rgba(139,92,246,0.15); color:var(--purple-light); border-color:rgba(139,92,246,0.3);">₹2,299</span></td>
+              <td>₹26 - ₹28 / km</td>
+              <td>₹800 / day</td>
+              <td style="text-align:right;">
+                <a class="btn btn-whatsapp btn-sm table-btn" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%2017%20Seater%20Tempo%20Traveller" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 4: ROUND-TRIP VS ONE-WAY COMPARISON ═══════════════ -->
+  <section id="oneway-vs-roundtrip" class="section bg-gradient-2">
+    <div class="container">
+      <div class="fade-up text-center mx-auto" style="max-width:800px;">
+        <span class="section-label label-amber">⚖️ Smart Travel Decision</span>
+        <h2 class="section-title">One-Way Drop vs Round-Trip Cab</h2>
+        <p class="section-subtitle mx-auto">
+          Not sure whether to choose a One-Way Drop or Round-Trip Outstation Taxi? Here is how both options compare so you can save maximum money and travel comfortably.
+        </p>
+      </div>
+
+      <!-- Side-by-Side Cards -->
+      <div class="grid-2 fade-up" style="margin-top: 40px;">
+        <!-- Card 1: One Way -->
+        <div class="compare-vs-card" style="border-left: 4px solid var(--primary);">
+          <span class="compare-vs-badge label-orange">Option A</span>
+          <h3 style="font-family:'Poppins',sans-serif; color:#fff; font-size:1.4rem;">One-Way Drop Taxi</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-top:6px;">
+            Ideal when you are visiting a city with an open-ended return date, catching a flight from another airport, or relocating.
+          </p>
+
+          <ul class="compare-feature-list">
+            <li><span class="check-icon">✓</span> <strong>Pay only for 1-way distance:</strong> Zero return fuel or vehicle empty run charges.</li>
+            <li><span class="check-icon">✓</span> <strong>No minimum km penalty:</strong> Standard slab rate based strictly on Chennai to destination route.</li>
+            <li><span class="check-icon">✓</span> <strong>No Driver Night Halt charges:</strong> Once dropped, your bill ends immediately.</li>
+            <li><span class="check-icon">✓</span> <strong>Door-to-door convenience:</strong> Picked from your Chennai home/airport and dropped at exact address.</li>
+            <li><span class="check-icon" style="color:var(--amber);">ℹ</span> <strong>Best for:</strong> College joinings, one-way business meetings, returning to hometown.</li>
+          </ul>
+
+          <a class="btn btn-primary" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20One-Way%20Drop%20Taxi" target="_blank" rel="noopener noreferrer">
+            Book One-Way Drop
+          </a>
+        </div>
+
+        <!-- Card 2: Round Trip -->
+        <div class="compare-vs-card" style="border-left: 4px solid var(--secondary);">
+          <span class="compare-vs-badge label-blue">Option B</span>
+          <h3 style="font-family:'Poppins',sans-serif; color:#fff; font-size:1.4rem;">Round-Trip Outstation Cab</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-top:6px;">
+            Best when you are heading out for weekend family vacations, multiple temple darshans, or sightseeing hill stations.
+          </p>
+
+          <ul class="compare-feature-list">
+            <li><span class="check-icon">✓</span> <strong>Dedicated vehicle at your disposal:</strong> Cab and driver stay with you throughout the holiday.</li>
+            <li><span class="check-icon">✓</span> <strong>Local sightseeing included:</strong> Stop at waterfalls, temples, viewpoints, and restaurants at leisure.</li>
+            <li><span class="check-icon">✓</span> <strong>Cost-effective for multi-day tours:</strong> Billed at standard 250 - 300 km/day base.</li>
+            <li><span class="check-icon">✓</span> <strong>Flexibility to change itinerary:</strong> Add en-route halts without re-booking tickets.</li>
+            <li><span class="check-icon" style="color:var(--amber);">ℹ</span> <strong>Best for:</strong> Weekend getaways, Navagraha temple circuits, Ooty & Kodaikanal holidays.</li>
+          </ul>
+
+          <a class="btn btn-secondary" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20Round-Trip%20Cab" target="_blank" rel="noopener noreferrer">
+            Book Round-Trip Cab
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature Comparison Matrix -->
+      <div class="table-container fade-up" style="margin-top: 36px;">
+        <table class="price-table table-blue" aria-label="One Way vs Round Trip Feature Matrix">
+          <thead>
+            <tr>
+              <th scope="col">Parameters / Features</th>
+              <th scope="col">One-Way Drop Taxi</th>
+              <th scope="col">Round-Trip Outstation Cab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong style="color:#fff;">Billing Calculation</strong></td>
+              <td>Flat route fare or 1-way actual kilometers</td>
+              <td>Total kilometers traveled (Min 250 - 300 km/calendar day)</td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Return Kilometer Charges</strong></td>
+              <td><span style="color:var(--green-light); font-weight:700;">₹0 (ZERO Return Charge)</span></td>
+              <td>Included in total round-trip km cycle</td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Vehicle Availability During Stay</strong></td>
+              <td>Released upon destination arrival</td>
+              <td>Stays exclusively parked with you throughout the trip</td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Sightseeing & En-route Stops</strong></td>
+              <td>Direct drop (1-2 meal/tea halts on highway)</td>
+              <td>Unlimited local sightseeing within booked daily limit</td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Driver Allowance (Batta)</strong></td>
+              <td>Included in flat one-way quotes</td>
+              <td>₹400 - ₹600 per calendar day (depending on car)</td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Toll & Parking Handling</strong></td>
+              <td>1-way actual Fastag toll on highway</td>
+              <td>Both ways toll & destination parking as actuals</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 5: FARE DISCLAIMER & TRANSPARENCY NOTICE ═══════════════ -->
+  <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="container">
+      <div class="notice-box fade-up">
+        <div class="notice-icon">💬</div>
+        <div class="notice-text">
+          <h4>Note: All Fares Approximate &bull; Get Exact Instant Quote via WhatsApp</h4>
+          <p>
+            Published fares represent standard base tariffs for AC Sedans during normal operating days. Exact final price may vary depending on pickup point within Chennai, exact drop address, vehicle availability, festive seasons, and actual Fastag tolls or inter-state permit fees (for Pondicherry, Andhra Pradesh, and Karnataka). <strong>We provide a 100% transparent, all-inclusive quote on WhatsApp before your trip begins. No surprises, no hidden surcharges.</strong>
+          </p>
+          <div style="margin-top: 14px;">
+            <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919363539853?text=Hi%2C%20please%20send%20me%20an%20exact%20quote%20for%20my%20route" target="_blank" rel="noopener noreferrer">
+              Get Instant WhatsApp Quote &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 6: ROUTE FAQS ═══════════════ -->
+  <section class="section bg-gradient-1">
+    <div class="container">
+      <div class="fade-up text-center mx-auto" style="max-width:760px;">
+        <span class="section-label label-orange">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle mx-auto">
+          Common queries regarding Chennai airport drop fares, outstation bookings, toll payments, and cancellation policies.
+        </p>
+      </div>
+
+      <div class="grid-2 fade-up" style="margin-top:40px; gap:20px;">
+        <div>
+          <div class="faq-item" style="margin-bottom:16px;">
+            <div class="faq-q">
+              <span>How do I book a Chennai Airport taxi in advance?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-a">
+              You can book in under 60 seconds! Simply send your flight arrival date, time, and drop destination to our WhatsApp at +91 93635 39853 or call us. Our driver will be assigned with car number and tracking link prior to your touchdown.
+            </div>
+          </div>
+
+          <div class="faq-item" style="margin-bottom:16px;">
+            <div class="faq-q">
+              <span>Are there midnight or peak-hour surge charges?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-a">
+              No. Unlike app-based aggregators with 2x or 3x dynamic pricing in heavy rain or midnight hours, The All India Travels provides locked, flat quotes confirmed prior to vehicle departure.
+            </div>
+          </div>
+
+          <div class="faq-item" style="margin-bottom:16px;">
+            <div class="faq-q">
+              <span>What if my flight arrives late at Chennai Airport?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-a">
+              We monitor live flight radars. If your inbound flight is delayed by an hour or more, your driver adjusts arrival time automatically at no additional waiting fee.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="faq-item" style="margin-bottom:16px;">
+            <div class="faq-q">
+              <span>Are tolls, GST, and interstate taxes included in the fare?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-a">
+              Our tariff chart quotes base vehicle and chauffeur charges. Fastag tolls and interstate border road permits (for Tirupati in AP, Munnar in Kerala, or Bangalore in Karnataka) are billed on actuals, or can be bundled into a single all-inclusive fixed package upon request.
+            </div>
+          </div>
+
+          <div class="faq-item" style="margin-bottom:16px;">
+            <div class="faq-q">
+              <span>Can I make en-route stops for breakfast or sightseeing?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-a">
+              Absolutely! For one-way outstation cabs, reasonable tea and meal breaks on highway plazas are warmly accommodated. For round-trip bookings, full local sightseeing is included within your daily mileage.
+            </div>
+          </div>
+
+          <div class="faq-item" style="margin-bottom:16px;">
+            <div class="faq-q">
+              <span>What payment methods do you accept?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-a">
+              We accept Google Pay, PhonePe, Paytm, UPI, Bank Transfer (IMPS/NEFT), and direct Cash to driver upon successful completion of your journey.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 7: QUICK BOOKING & CTA SECTION ═══════════════ -->
+  <section id="quick-booking" class="section" style="position:relative; overflow:hidden;">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        
+        <!-- CTA Left Column -->
+        <div class="fade-up">
+          <span class="section-label label-orange">Instant Confirmation 24/7</span>
+          <h2 class="section-title" style="font-size:clamp(2rem,4vw,3.2rem); margin-top:14px;">
+            Ready to Travel? Get Your Fixed Fare Quote Now!
+          </h2>
+          <p style="color:var(--text-muted); font-size:1.02rem; margin-top:16px; line-height:1.8;">
+            Whether you need a midnight pickup at Chennai International Airport or a 4-day temple pilgrimage across South India, our comfortable fleet and courteous chauffeurs are at your service.
+          </p>
+
+          <div style="margin-top:28px; display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div style="width:44px; height:44px; border-radius:12px; background:rgba(16,185,129,0.15); display:grid; place-items:center; color:var(--green-light); font-size:1.2rem;">✓</div>
+              <div>
+                <strong style="color:#fff;">Zero Cancellation Penalty</strong>
+                <div style="font-size:0.82rem; color:var(--text-muted);">Change of travel plans? Cancel anytime before driver dispatch without deductions.</div>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div style="width:44px; height:44px; border-radius:12px; background:rgba(14,165,233,0.15); display:grid; place-items:center; color:var(--secondary-light); font-size:1.2rem;">✓</div>
+              <div>
+                <strong style="color:#fff;">Verified Highway Chauffeurs</strong>
+                <div style="font-size:0.82rem; color:var(--text-muted);">Well-mannered, experienced drivers familiar with every Tamil Nadu bypass route.</div>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div style="width:44px; height:44px; border-radius:12px; background:rgba(255,107,0,0.15); display:grid; place-items:center; color:var(--primary-light); font-size:1.2rem;">✓</div>
+              <div>
+                <strong style="color:#fff;">24/7 Customer Support</strong>
+                <div style="font-size:0.82rem; color:var(--text-muted);">Call or WhatsApp our team anytime day or night for instant live dispatch.</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:32px;">
+            <a class="btn btn-whatsapp btn-lg" href="https://wa.me/919363539853?text=Hi%2C%20I%20want%20to%20book%20a%20taxi%20booking" target="_blank" rel="noopener noreferrer">
+              💬 Book on WhatsApp
+            </a>
+            <a class="btn btn-outline btn-lg" href="tel:+919363539853">
+              📞 Call +91 93635 39853
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Right Column: Quick Enquiry Form (hooks to js/main.js setupWhatsAppForm) -->
+        <div class="fade-up">
+          <div class="form-card" style="box-shadow:var(--shadow-lg);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+              <h3 style="color:#fff; margin:0;">Quick Cab Enquiry</h3>
+              <span class="badge label-green">Instant WhatsApp Reply</span>
+            </div>
+            <p class="sub">Fill your journey details below to receive a guaranteed fixed fare quote directly on WhatsApp.</p>
+
+            <form id="quick-enquiry-form">
+              <div class="form-grid">
+                <div>
+                  <label class="form-label" for="q-name">Your Name</label>
+                  <input class="form-input" type="text" id="q-name" placeholder="e.g. Anand Kumar" required />
+                </div>
+
+                <div>
+                  <label class="form-label" for="q-phone">WhatsApp / Phone Number</label>
+                  <input class="form-input" type="tel" id="q-phone" placeholder="e.g. 9876543210" required />
+                </div>
+
+                <div>
+                  <label class="form-label" for="q-route">Route / Travel Destination</label>
+                  <input class="form-input" type="text" id="q-route" placeholder="e.g. Chennai Airport to Pondicherry" required />
+                </div>
+
+                <div class="form-row">
+                  <div>
+                    <label class="form-label" for="q-date">Travel Date</label>
+                    <input class="form-input" type="date" id="q-date" required />
+                  </div>
+                  <div>
+                    <label class="form-label" for="q-type">Trip Type</label>
+                    <select class="form-select" id="q-type" required>
+                      <option value="Airport Drop">Airport Drop</option>
+                      <option value="One-Way Outstation" selected>One-Way Outstation</option>
+                      <option value="Round-Trip">Round-Trip Outstation</option>
+                      <option value="Hourly Rental">Hourly City Rental</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" style="margin-top:10px;">
+                  🚀 Get Exact Quote via WhatsApp
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-logo" style="width:44px;height:44px;font-size:1.2rem;">🚕</span>
+          <span class="brand-text"><strong>The All India Travels</strong><small>AnyTime AnyWhere</small></span>
+        </div>
+        <p>Chennai's most trusted taxi service. Airport transfers, outstation cabs, one-way taxi & Tamil Nadu tours — 24/7.</p>
+        <div style="margin-top:16px;"><a class="btn btn-whatsapp btn-sm" href="https://wa.me/919363539853" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a></div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <div class="footer-links">
+          <a href="services.html">Airport Taxi</a>
+          <a href="services.html">One Way Taxi</a>
+          <a href="services.html">Outstation Cabs</a>
+          <a href="services.html">Temple Tours</a>
+          <a href="services.html">Corporate Travel</a>
+        </div>
+      </div>
+      <div>
+        <h5>Popular Routes</h5>
+        <div class="footer-links">
+          <a href="routes.html">Chennai → Pondicherry</a>
+          <a href="routes.html">Chennai → Tirupati</a>
+          <a href="routes.html">Chennai → Madurai</a>
+          <a href="routes.html">Chennai → Ooty</a>
+          <a href="routes.html">Chennai → Kanyakumari</a>
+        </div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="footer-links">
+          <a href="tel:+919363539853">📞 +91 93635 39853</a>
+          <a href="https://wa.me/919363539853" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+          <a href="mailto:theallindiatravels@gmail.com">✉️ Email Us</a>
+          <a href="contact.html">📍 Chennai Airport, TN 600016</a>
+          <a href="https://jsdl.in/RSL-OTC1785735437" target="_blank" rel="noopener noreferrer">⭐ Rate on Justdial</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span class="current-year"></span> The All India Travels Airport. All rights reserved.</div>
+      <div>Chennai Airport Taxi | Outstation Cab | One Way Taxi | Tamil Nadu Tours</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/919363539853?text=Hi%2C%20I%20need%20a%20taxi%20booking" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">💬</a>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+
+<!-- Interactive Table Filter Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('routeSearchInput');
+    const filterButtons = document.querySelectorAll('.filter-tag-btn');
+    const table = document.getElementById('outstationTable');
+    const noRouteFound = document.getElementById('noRouteFound');
+
+    if (!table) return;
+    const rows = table.querySelectorAll('tbody tr');
+
+    let activeFilter = 'all';
+    let searchQuery = '';
+
+    function filterTable() {
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        const category = row.getAttribute('data-category') || '';
+        
+        const matchesCategory = (activeFilter === 'all') || category.includes(activeFilter);
+        const matchesSearch = text.includes(searchQuery);
+
+        if (matchesCategory && matchesSearch) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      if (noRouteFound) {
+        noRouteFound.style.display = (visibleCount === 0) ? 'block' : 'none';
+      }
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        filterTable();
+      });
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.getAttribute('data-filter');
+        filterTable();
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
