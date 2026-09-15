@@ -44,6 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
   if (hamburger && mobileNav) {
+    if (!mobileNav.querySelector('a[href^="tel:"]')) {
+      const callLink = document.createElement('a');
+      callLink.href = 'tel:+919363539853';
+      callLink.className = 'btn btn-secondary';
+      callLink.textContent = '📞 Call Now';
+      mobileNav.appendChild(callLink);
+    }
+
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       mobileNav.classList.toggle('active');
